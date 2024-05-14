@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACTS and SOCIAL LINKS</title>
+    <link rel="stylesheet" href="styles on contact.css">
+</head>
+<header class="header">
+
+  <nav class="header-right">
+    <a href="HOME PAGE.html" class="btn btn-outline-secondary btn-lg">Home</a>
+    <a href="ABOUT US.html" class="btn btn-outline-secondary btn-lg">About Us</a>
+
+    <div class="dropdown">
+      <button class="dropbtn"><a href="" >Shop</a></button>
+      <div class="dropdown-content dropdown-menu-right">
+      <a href="DENIM.html">Denim Jakets</a>
+      <a href="HOODIES.html">Hoodies</a>
+      <a href="SHOES.html">Shoes</a>
+      </div>
+    </div>
+    <a href="ORDER FORM.html" class="btn btn-outline-secondary btn-lg">Order Form</a>
+    <a href="CONTACTS AND COMMENTS.html" class="btn btn-outline-secondary btn-lg">Contacts</a>
+  </nav>
+  
+</header>
+<style>
+    @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  #userComment {
+    width: 100%;
+    height: 100px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    resize: none;
+    }
+</style>
+
+<body>
+    
+<center>
+
+    <div class="content">
+        <img src="Logo.png" alt="owners picture">
+        <h1>Social Links and Contacts</h1>
+        <div class="social-icons">
+            <a href="https://web.facebook.com/miramanao.kinomon?mibextid=ZbWKwL" target="_blank">
+                <img class="social-icon" src="Facebook logo.png" alt="Facebook">
+            </a>
+            <a href="https://www.snapchat.com/add/mirakinomon?share_id=NBQ1S0v3tnc&locale=en-US" target="_blank">
+                <img class="social-icon" src="snapchat logo.jpg" alt="Snapchat">
+            </a>
+            <a href="https://www.instagram.com/ils_iyana?igsh=MXR3d2gxNGJuc2k3bw==" target="_blank">
+                <img class="social-icon" src="instagram logo.jpg" alt="Instagram">
+            </a>
+            <a href="https://Telegram.com" target="_blank">
+                <img class="social-icon" src="telegram logo.jpg" alt="Telegram">
+            </a>
+            <a href="https://www.tiktok.com/" target="_blank">
+              <img class="social-icon" src="tiktok logo.png" alt="TikTok">
+            </a>
+            <a href="https://mail.google.com/mail/" target="_blank">
+              <img class="social-icon" src="email logo.jpg" alt="email">
+            </a>
+            
+
+        </div>
+      <br>
+      <h2>Comment Box</h2>
+      <div id="displayData"></div>
+      <form id="myForm">
+          Full name: <input type="text" id="userName" name="fname"><br>
+          Email: <input type="text" id="userEmail" name="email"><br>
+          Comment: <textarea id="userComment" rows="4" cols="50" name="comment">Enter your comment here...</textarea>
+          <input type="button" onclick="displayComment()" value="Submit">
+      </form>
+  
+      <script>
+          function displayComment() {
+              const name = document.getElementById("userName").value;
+              const email = document.getElementById("userEmail").value;
+              const comment = document.getElementById("userComment").value;
+  
+              const data = `User name: ${name}<br> User email: ${email}<br> User comment: ${comment}`;
+              document.getElementById("displayData").innerHTML = data;
+          }
+      </script>
+    </div>
+    <br>
+</center>
+    <footer class="footer">
+        &copy; 2024 MIRA KINOMON. All rights reserved.
+    </footer>
+</body>
+</html>

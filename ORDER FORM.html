@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mira's Vintage Finds</title>
+    <link rel="stylesheet" href="styles on orderForm.css">
+</head>
+<header class="header">
+
+  <nav class="header-right">
+    <a href="HOME PAGE.html" class="btn btn-outline-secondary btn-lg">Home</a>
+    <a href="ABOUT US.html" class="btn btn-outline-secondary btn-lg">About Us</a>
+
+    <div class="dropdown">
+      <button class="dropbtn"><a href="" >Shop</a></button>
+      <div class="dropdown-content dropdown-menu-right">
+      <a href="DENIM.html">Denim Jakets</a>
+      <a href="HOODIES.html">Hoodies</a>
+      <a href="SHOES.html">Shoes</a>
+      </div>
+    </div>
+    <a href="ORDER FORM.html" class="btn btn-outline-secondary btn-lg">Order Form</a>
+    <a href="CONTACTS AND COMMENTS.html" class="btn btn-outline-secondary btn-lg">Contacts</a>
+  </nav>
+</header>
+<style>
+    @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+  .col-7, .col-8, .col-9 {
+    width: 100%;
+  }
+}
+
+</style>
+
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="background.mp4" type="video/mp4">
+    </video>
+    
+<center>
+
+  <div class="content">
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <h1>Product Order Form</h1><br>
+    <form id="orderForm">
+      <h2>Product Information</h2>
+      <label for="productName">Product Name/Code:</label>
+      <input type="text" id="productName" name="productName" required> 
+      <label for="productPrice">Price:</label>
+      <input type="text" id="productPrice" name="productPrice" required><br><br>
+
+      <h2>Customer Information</h2>
+      <label for="customerName">Name:</label>
+      <input type="text" id="customerName" name="customerName" required>
+      <label for="customerEmail">Email:</label>
+      <input type="email" id="customerEmail" name="customerEmail"><br>
+      <label for="customerPhone">Phone Number:</label>
+      <input type="tel" id="customerPhone" name="customerPhone"required> <br><br>
+
+      <h2>Shipping Information</h2>
+      <label for="shippingAddress">Address:</label>
+      <textarea id="shippingAddress" name="shippingAddress" required></textarea><br>
+      <label for="shippingCity">City:</label>
+      <input type="text" id="shippingCity" name="shippingCity" required><br>
+      <label for="shippingState">State/Province:</label>
+      <input type="text" id="shippingState" name="shippingState" required>
+        </select>
+  <br>
+      <button type="submit">Submit Order</button>
+    </form>
+    
+  
+  </div>
+  
+  <script src="Google Sheet.js"></script>
+</center>
+    <footer class="footer">
+        &copy; 2024 Miraculus Perfection. All rights reserved.
+    </footer>
+</body>
+</html>

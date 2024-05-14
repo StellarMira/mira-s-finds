@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Mira's Vintage Finds</title>
+    <link rel="stylesheet" href="styles on register.css">
+</head>
+<header class="header">
+
+</header>
+<style>
+    @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+    @media only screen and (max-width: 768px) {
+  .col-7, .col-8, .col-9 {
+    width: 100%;
+  }
+}
+
+  }
+  p{
+    margin-right: auto;
+    margin-left:auto;
+    text-align: center;
+    text-indent: 4em;
+    color: rgb(245, 240, 240);
+}
+  
+  
+</style>
+
+
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="background.mp4" type="video/mp4">
+    </video>
+    <div class="content">
+      <h1>Register</h1>
+      <form method="POST" action="HOME PAGE.html" target="_self" onsubmit="return validateForm()">
+          <!-- Full Name -->
+          <label for="fullName">Full Name:</label>
+          <input type="text" id="fullName" name="fullName" required>
+          <br>
+  
+          <!-- Username -->
+          <label for="loginUsername">Username:</label>
+          <input type="text" id="loginUsername" name="loginUsername" required>
+          <br>
+  
+          <!-- Password -->
+          <label for="loginPassword">Password:</label>
+          <input type="password" id="loginPassword" name="loginPassword" required>
+          <br>
+  
+          <!-- Submit Button -->
+          <button type="submit">Create Account</button>
+      </form>
+
+      <p>Already have an account? <a href="login.html">Log In</a></p>
+
+  </div>
+  
+  <script>
+  function validateForm() {
+      const fullName = document.getElementById("fullName").value;
+      const username = document.getElementById("loginUsername").value;
+      const password = document.getElementById("loginPassword").value;
+  
+      if (fullName.trim() === "" || username.trim() === "" || password.trim() === "") {
+          alert("Please fill in all fields.");
+          return false; // Prevent form submission
+      }
+  
+      // Additional validation (if needed)
+  
+      return true; // Allow form submission
+  }
+  </script>
+  
+  
+
+    <footer class="footer">
+        &copy; 2024 Miraculus Perfection. All rights reserved.
+    </footer>
+</body>
+</html>
